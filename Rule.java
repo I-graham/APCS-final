@@ -162,7 +162,9 @@ class SwitcherN extends Rule{
 
         }
 
-        return (cases.get(count) == Boolean.TRUE) ? true : false;
+        thisCell.on = (cases.get(count) == Boolean.TRUE) ? true : false;
+
+        return thisCell.on;
 
     }
 
